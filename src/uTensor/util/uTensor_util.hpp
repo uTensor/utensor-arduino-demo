@@ -101,6 +101,9 @@ void printVector(std::vector<uint32_t> vec);
 #else
 #if ARDUINO
     #include "Arduino.h"
+
+    #undef max
+    #undef min
 #else
     #include "mbed.h"
 #endif

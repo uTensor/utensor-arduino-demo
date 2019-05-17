@@ -1,8 +1,4 @@
-
-#include <ArduinoSTL.h>
-using namespace std;
 #include <uTensor.h>
-
 
 void setup() {
   // put your setup code here, to run once:
