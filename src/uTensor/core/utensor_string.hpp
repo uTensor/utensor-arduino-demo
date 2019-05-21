@@ -39,7 +39,7 @@ namespace utensor {
 
 
 namespace std {
-    template<> struct std::hash<utensor::string>
+    template<> struct hash<utensor::string>
     {
         typedef utensor::string argument_type;
         typedef std::size_t result_type;
