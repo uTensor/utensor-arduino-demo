@@ -1,7 +1,7 @@
 
 #include <ArduinoSTL.h>
 using namespace std;
-#include "uTensor.h"
+#include <uTensor.h>
 
 
 void setup() {
