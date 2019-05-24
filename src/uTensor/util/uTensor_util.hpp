@@ -104,6 +104,8 @@ void printVector(std::vector<uint32_t> vec);
 
     #undef max
     #undef min
+    #undef round
+    #undef abs
 #else
     #include "mbed.h"
 #endif
