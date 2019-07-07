@@ -30,13 +30,13 @@ def bias_variable(shape, name):
 
 # Fully connected 2 layer NN
 def deepnn(x):
-  W_fc1 = weight_variable([784, 64], name='W_fc1')
-  b_fc1 = bias_variable([64], name='b_fc1')
+  W_fc1 = weight_variable([784, 32], name='W_fc1')
+  b_fc1 = bias_variable([32], name='b_fc1')
   a_fc1 = tf.add(tf.matmul(x, W_fc1), b_fc1, name="zscore")
   h_fc1 = tf.nn.relu(a_fc1)
   layer1 = tf.nn.dropout(h_fc1, 0.50)
 
-  W_fc2 = weight_variable([64, 10], name='W_fc3')
+  W_fc2 = weight_variable([32, 10], name='W_fc3')
   b_fc2 = bias_variable([10], name='b_fc3')
   logits = tf.add(tf.matmul(layer1, W_fc2), b_fc2, name="logits")
   y_pred = tf.argmax(logits, 1, name='y_pred')
@@ -118,10 +118,10 @@ if __name__ == '__main__':
                       help='session check point (default: %(default)s)')
   parser.add_argument('-n', '--num-iteration', type=int,
                       dest='num_iter',
-                      default=20000,
+                      default=100000,
                       help='number of iterations (default: %(default)s)')
   parser.add_argument('--batch-size', dest='batch_size',
-                      default=50, type=int,
+                      default=150, type=int,
                       help='batch size (default: %(default)s)')
   parser.add_argument('--log-every-iters', type=int,
                       dest='log_iter', default=1000,
