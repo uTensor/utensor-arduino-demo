@@ -6,7 +6,7 @@ On Arduino IDE on MacOS
 - Go to the Arduino library directory, for example:
 
 ```
-/Users/<username>/Documents/Arduino/libraries/uTensor
+/Users/<username>/Documents/Arduino/libraries/
 ```
 
 - Clone the uTensor C++ runtime:
