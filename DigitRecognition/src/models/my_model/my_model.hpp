@@ -11,8 +11,10 @@ class My_model : public ModelInterface<1, 1>
   enum input_names : uint8_t { input_0 };
   enum output_names : uint8_t { output_0 };
   My_model();
+
  protected:
   virtual void compute();
+
  private:
   // Operators
   TflmSymQuantOps::FullyConnectedOperator<int8_t> op_FullyConnectedOperator_000;

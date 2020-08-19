@@ -3,7 +3,7 @@
 #include <cmath>
 
 #include "input_image.h"  //contains the first sample taken from the MNIST test set
-#include "models/my_model/my_model.hpp"  //gernerated model file"
+#include "src/models/my_model/my_model.hpp"  //gernerated model file"
 #include "uTensor.h"
 
 using namespace uTensor;
@@ -48,7 +48,7 @@ void setup() {
   input_image.free();
   logits.free();
 
-  Serial.println("pred label: %d", max_index);
+  Serial.printf("pred label: %d\r\n", max_index);
 
   
 }
