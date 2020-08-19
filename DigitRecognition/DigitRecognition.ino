@@ -24,12 +24,6 @@ int argmax(const Tensor &logits) {
 
 static My_model model;
 
-int main(void) {
-
-
-  return 0;
-}
-
 void setup() {
   Serial.begin(9600);
   while (!Serial);
@@ -54,5 +48,5 @@ void setup() {
 }
 
 void loop() {
-
+  
 }
