@@ -2,7 +2,7 @@
 
 On Arduino IDE on MacOS
 
-## Cloning the library
+## Install the library
 - Go to the Arduino library directory, for example:
 
 ```
@@ -14,6 +14,10 @@ On Arduino IDE on MacOS
 ```
 # using ssh
 git clone git@github.com:uTensor/uTensor.git
+```
+- Checkout the right banch
+```
+git checkout f/arduino
 ```
 
 ## Building the example
