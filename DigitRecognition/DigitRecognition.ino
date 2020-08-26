@@ -12,7 +12,7 @@ int argmax(const Tensor &logits) {
   uint32_t num_elems = logits->num_elems();
   float max_value = static_cast<float>(logits(0));
   int max_index = 0;
-  for (int i = 1; i < num_elems; ++i) {
+  for (uint32_t i = 1; i < num_elems; ++i) {
     float value = static_cast<float>(logits(i));
     if (value >= max_value) {
       max_value = value;
@@ -39,8 +39,6 @@ void setup() {
       .eval();
 
   int max_index = argmax(logits);
-  input_image.free();
-  logits.free();
 
   Serial.printf("pred label: %d\r\n", max_index);
 

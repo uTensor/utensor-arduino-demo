@@ -17,6 +17,7 @@ git clone git@github.com:uTensor/uTensor.git
 ```
 - Checkout the right banch
 ```
+cd uTensor
 git checkout f/arduino
 ```
 
