@@ -11,24 +11,29 @@ On Arduino IDE on MacOS
 
 - Clone the uTensor C++ runtime:
 
-```
-# using ssh
-git clone git@github.com:uTensor/uTensor.git
+```bash
+# using https
+$ git clone https://github.com/uTensor/uTensor.git
+# or using ssh
+$ git clone git@github.com:uTensor/uTensor.git
 ```
 - Checkout the right banch
-```
-cd uTensor
-git checkout f/arduino
+```bash
+$ cd uTensor
+$ git checkout f/arduino
 ```
 
 ## Building the example
 
 - Clone the example
-
-``` 
-git clone git@github.com:uTensor/utensor-arduino-demo.git
+```bash
+$ git clone https://github.com/uTensor/utensor-arduino-demo.git
 ```
 
-- Open `DigitRecognition.ino` under `utensor-arduino-demo\DigitRecognition` with Arduino IDE.
-
+- Open `DigitRecognition.ino` under `utensor-arduino-demo/DigitRecognition` with Arduino IDE.
+- Install board support via `Boards Manager` (`Tools` -> `Boards Manager`)
+  - for example, you can install `Arduino Nano 33 BLE`
+![board-support](images/board_support.png)
+- Switch to the target board
+![board-select](images/select_board.png)
 - Click on `Verify`
