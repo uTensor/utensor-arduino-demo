@@ -40,7 +40,8 @@ void setup() {
 
   int max_index = argmax(logits);
 
-  Serial.printf("pred label: %d\r\n", max_index);
+  Serial.print("pred label: ");
+  Serial.println(max_index);
 
   
 }
